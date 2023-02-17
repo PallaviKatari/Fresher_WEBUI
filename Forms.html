@@ -10,7 +10,7 @@
 
 <body>
     <h1 style="text-align: center;">Registration Form</h1>
-    <form action="https://www.cgvakindia.com/" method="Post">
+    <form action="">
         <fieldset>
             <legend>
                 Trainee Details
@@ -28,6 +28,7 @@
             <textarea></textarea><br>
             <label>Select Course</label><br>
             <select name="course">
+                <option value="" disabled selected hidden>Choose your Course</option>
                 <optgroup label="WEBUI">
                     <option>HTML</option>
                     <option>CSS</option>
@@ -55,7 +56,7 @@
         <br>
         <br>
         <label>Telephone Number</label>
-        <input type="tel" pattern="[0-9]{4}-[0-9]{7}" required>
+        <input type="tel" pattern="[0-4]{3}-[0-9]{4}-[0-4]{3}" required>
         <input type="submit" value="Submit">
     </form>
     <hr>
