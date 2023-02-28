@@ -42,8 +42,41 @@
             color: green;
             text-align: right;
         }
-        .para1,h6{
+
+        .para1,
+        h6 {
             font-size: 40px;
+        }
+
+        /* Adjust height between the anchor tag and its line */
+        .underline {
+            text-decoration: none;
+            position: relative;
+        }
+
+        .underline:after {
+            position: absolute;
+            content: '';
+            height: 2px;
+            /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+            bottom: -4px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            width: 100%;
+            background: green;
+            /* optional animation */
+            -o-transition: .5s;
+            -ms-transition: .5s;
+            -moz-transition: .5s;
+            -webkit-transition: .5s;
+            transition: .5s;
+        }
+
+        /* optional hover classes used with anmiation */
+        .underline:hover:after {
+            width: 80%;
+            background: orange;
         }
     </style>
 </head>
@@ -74,12 +107,14 @@
             Welcome Team
             How are you?
         </pre>
-        <!--INLINE CSS-->
+    <!--INLINE CSS-->
     <h6 style="background-color: aquamarine;">Universal</h6>
-        <address>
-            CGVAK/G2<br>
-            CBE
-        </address>
+    <address>
+        CGVAK/G2<br>
+        CBE
+    </address>
+    <!--anchor tag-->
+    <a href="" class="underline">Sample</a>
 
 
 </body>
