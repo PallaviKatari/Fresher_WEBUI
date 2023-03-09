@@ -50,7 +50,8 @@
       }
 
       .card,
-      .card-img-top ,.col{
+      .card-img-top,
+      .col {
         margin-top: 10px;
         height: 300px;
         width: 250px;
@@ -98,6 +99,34 @@
       margin-right: 100px;
       margin-top: 10px;
     }
+
+    /* .carousel-indicators [data-bs-target] { */
+    /* box-sizing: content-box;
+      flex: 0 1 auto;
+      width: 10px;
+      height: 10px;
+      padding: 0;
+      margin-right: 3px;
+      margin-left: 3px;
+      text-indent: -999px;
+      cursor: pointer;
+      background-color: #f60911;
+      background-clip: padding-box;
+      border: 0;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      opacity: .5;
+      transition: opacity .6s ease; */
+    .carousel-indicators [data-bs-target] {
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      background-color: #f60911;
+    }
+
+    .carousel-indicators [data-bs-target] :hover {
+      background-color: rgb(253, 251, 248);
+    }
   </style>
 </head>
 
@@ -139,7 +168,7 @@
                 class="fa-solid fa-right-to-bracket"></i>Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-solid fa-user-plus" ></i>Sign Up</a>
+            <a class="nav-link" href="#"><i class="fa-solid fa-user-plus"></i>Sign Up</a>
           </li>
         </ul>
       </div>
@@ -344,8 +373,8 @@
   <div class="tabs">
     <nav>
       <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <button class="nav-link " id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#html" type="button"
-          role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+        <button class="nav-link " id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#html" type="button" role="tab"
+          aria-controls="nav-home" aria-selected="true">Home</button>
         <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#css" type="button"
           role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
         <button class="nav-link active" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#sql" type="button"
